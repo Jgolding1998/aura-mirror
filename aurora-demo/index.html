@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aura Mirror — Hackathon Demo</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0a141c; color: #e9f6fb; font: 1rem/1.55 system-ui, sans-serif; }
+  main { max-width: 38rem; margin: 2rem auto; padding: 0 1rem 2rem; }
+  h1 { font-size: clamp(2.25rem, 7vw, 3.5rem); line-height: 1.1; margin: 0; }
+  .eyebrow, a { color: #9be7f1; }
+  video { display: block; width: min(100%, 25rem, 40vh); margin: 1.5rem auto; aspect-ratio: 9/16; background: #050a0e; border: 1px solid #52707d; border-radius: .65rem; }
+  footer { color: #bdd0d8; font-size: .875rem; }
+</style>
+<main>
+  <p class="eyebrow">Meta Global AI Developer Hackathon</p>
+  <h1>Aura Mirror</h1>
+  <p>The Aurora build log shows the Windows mirror prototype responding to voice, previewing a shirt live, and accepting hand gestures.</p>
+  <video controls playsinline preload="metadata" aria-label="Aurora Mirror prototype demo">
+    <source src="aurora-mirror-demo.mp4" type="video/mp4">
+    <p><a href="aurora-mirror-demo.mp4">Open the demo video</a></p>
+  </video>
+  <p><a href="aurora-mirror-demo.mp4" download>Download the demo</a> · <a href="https://github.com/Jgolding1998/aura-mirror">Browse the source code</a></p>
+  <footer>Live fitting is an approximate visual preview. The hardware shown at the beginning is part of the physical mirror prototype.</footer>
+</main>
+</html>
