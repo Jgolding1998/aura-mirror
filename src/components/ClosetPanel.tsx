@@ -26,7 +26,7 @@ export function ClosetPanel({ items, category, focusId, selectedId, loading, rea
     <aside className="closet" aria-label="Closet" data-testid="closet-panel">
       <header className="closet__head">
         <h2 className="closet__title">Closet</h2>
-        {hasSamples && <span className="closet__note">Real shirt photos included</span>}
+        {hasSamples && <span className="closet__note">Real garment photos included</span>}
       </header>
 
       <div className="closet__tabs" role="tablist" aria-label="Categories">

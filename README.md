@@ -41,11 +41,11 @@ With the camera on, hold a garment in the centre and say **“Hey Meta, try what
 
 See [setup and hardware migration](docs/SETUP.md), [architecture](docs/ARCHITECTURE.md), [research and licenses](docs/RESEARCH.md), and [validation](docs/VALIDATION.md).
 
-**Try on live** fits a shirt photo to the clothing region of your camera view. Use either starter T-shirt photo, choose a saved top, or capture or upload your own. You can stay seated with your face, shoulders and chest in view. **Render a photo** opens the separate still photo tool.
+**Try on live** fits a top to the clothing region of your camera view. Try either graphic tee, the navy polo, or the denim jacket, or capture or upload your own. You can stay seated with your face, shoulders and chest in view. **Render a photo** opens the separate still photo tool. The jeans use photo try-on, which needs a full view of your legs.
 
 ## Local data
 
-Wardrobe metadata is stored in `.data/closet.json`. Garment and generated pictures are in `.data/media/`. Back up this folder together. The two sample T-shirt photos are bundled separately. Store secrets in `.env`, which is ignored by Git.
+Wardrobe metadata is stored in `.data/closet.json`. Garment and generated pictures are in `.data/media/`. Back up this folder together. Sample garment photos are bundled separately. Store secrets in `.env`, which is ignored by Git.
 
 The API binds to loopback by default. Camera video stays in the browser unless you explicitly capture a garment, save an image or request Meta visual advice or generated try-on. Meta image requests and generated try-on send the captured frame to your configured service. Kokoro runs on this computer; ElevenLabs receives response text only if configured. Browser speech recognition may use your browser vendor's remote service while listening is enabled.
 

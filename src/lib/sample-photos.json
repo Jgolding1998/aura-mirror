@@ -16,5 +16,32 @@
     "imageUrl": "/demo/blue-tee.jpg",
     "createdAt": "",
     "source": "sample"
+  },
+  {
+    "id": "sample-navy-polo",
+    "name": "Navy Polo",
+    "category": "shirts",
+    "color": "Navy",
+    "imageUrl": "/demo/navy-polo.jpg",
+    "createdAt": "",
+    "source": "sample"
+  },
+  {
+    "id": "sample-denim-jacket",
+    "name": "Washed Denim Jacket",
+    "category": "jackets",
+    "color": "Indigo",
+    "imageUrl": "/demo/denim-jacket.jpg",
+    "createdAt": "",
+    "source": "sample"
+  },
+  {
+    "id": "sample-blue-jeans",
+    "name": "Blue Jeans",
+    "category": "pants",
+    "color": "Blue",
+    "imageUrl": "/demo/blue-jeans.jpg",
+    "createdAt": "",
+    "source": "sample"
   }
 ]

@@ -11,6 +11,8 @@ async function explore(page) {
   await expect(page.getByTestId('closet-panel')).toBeVisible();
 }
 async function command(page, text) {
+  const open = page.getByRole('button', { name: 'Type a command' });
+  if (await open.isVisible()) await open.click();
   await page.getByTestId('command-input').fill(text);
   await page.getByTestId('command-send').click();
 }
@@ -57,7 +59,9 @@ test('adds and edits a photograph, persists after reload, then deletes only the 
   expect(added).toBeTruthy();
   try {
     await page.reload();
+    const open = page.getByTestId('assistant-hud-closet');
     if (await page.getByTestId('explore-demo').isVisible()) await page.getByTestId('explore-demo').click();
+    if (!(await page.getByTestId('closet-panel').isVisible())) await open.click();
     await page.getByTestId('category-jackets').click();
     await expect(page.getByTestId(`closet-card-${added.id}`)).toBeVisible();
     await page.getByTestId(`edit-item-${added.id}`).click();
@@ -148,6 +152,7 @@ test('local hand and pose models initialise against synthetic video and release 
   await expect(page.getByTestId('hand-toggle')).toContainText('No hand in view', { timeout: 30_000 });
   await page.getByTestId('hand-toggle').click();
   await expect(page.getByTestId('hand-toggle')).toContainText('Hand off');
+  await page.getByRole('button', { name: 'Type a command' }).click();
   await page.getByTestId('adjust-toggle').click();
   await page.getByTestId('pose-toggle').click();
   await expect(page.getByTestId('overlay-controls')).toContainText('Keep your shoulders or hips visible', { timeout: 30_000 });
