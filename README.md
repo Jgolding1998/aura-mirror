@@ -41,6 +41,8 @@ With the camera on, hold a garment in the centre and say **“Hey Meta, try what
 
 See [setup and hardware migration](docs/SETUP.md), [architecture](docs/ARCHITECTURE.md), [research and licenses](docs/RESEARCH.md), and [validation](docs/VALIDATION.md).
 
+The [Raspberry Pi launcher](pi/README.md) starts Aura on a Pi desktop with a display and USB webcam. Physical Pi testing is pending.
+
 **Try on live** fits a top to the clothing region of your camera view. Try either graphic tee, the navy polo, or the denim jacket, or capture or upload your own. You can stay seated with your face, shoulders and chest in view. **Render a photo** opens the separate still photo tool. The jeans use photo try-on, which needs a full view of your legs.
 
 ## Local data
