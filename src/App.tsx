@@ -834,7 +834,7 @@ export default function App() {
             readOnly={closet.readOnly}
             onCategory={(next) => void chooseCategory(next)}
             onSelect={handleSelect}
-            onTryOn={openTryOn}
+            onTryOn={(item) => { selectItem(item); openTryOn(item); }}
             onTryOwn={() => openAddDialog(false, 'ui', 'preview')}
             onAdd={() => openAddDialog(true)}
             onEdit={(item) => setItemDialog({ mode: 'edit', item, defaultCategory: item.category })}
