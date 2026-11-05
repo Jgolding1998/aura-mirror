@@ -1,0 +1,4 @@
+# Install official fashn_vton separately from its upstream checkout (see SETUP).
+fastapi>=0.115,<1
+uvicorn>=0.34,<1
+pillow>=11.3,<13

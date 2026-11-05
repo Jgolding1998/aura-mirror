@@ -1,0 +1,20 @@
+[
+  {
+    "id": "sample-charcoal-tee",
+    "name": "Charcoal Graphic Tee",
+    "category": "shirts",
+    "color": "Charcoal",
+    "imageUrl": "/demo/charcoal-tee.jpg",
+    "createdAt": "",
+    "source": "sample"
+  },
+  {
+    "id": "sample-blue-tee",
+    "name": "Royal Blue Graphic Tee",
+    "category": "shirts",
+    "color": "Royal blue",
+    "imageUrl": "/demo/blue-tee.jpg",
+    "createdAt": "",
+    "source": "sample"
+  }
+]
